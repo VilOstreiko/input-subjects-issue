@@ -7,7 +7,7 @@ import {BehaviorSubject} from 'rxjs';
 })
 export class ModesService {
   list = {
-    mac: (new Array(8)).fill('00-00-00-00-00-00'),
+    mac: (new Array(2)).fill('00-00-00-00-00-00'),
   };
   listSubject = new BehaviorSubject({...this.list});
 

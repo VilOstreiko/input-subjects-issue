@@ -29,5 +29,4 @@ export class ListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.alive = false;
   }
-
 }

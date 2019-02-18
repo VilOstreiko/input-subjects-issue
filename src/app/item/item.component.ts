@@ -7,10 +7,10 @@ import {MainService} from '../main.service';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() item: any;
-  @Input() itemPosition: any;
+  @Input() item: string;
+  @Input() itemPosition: number;
 
-  originalItem: any;
+  originalItem: string;
   isMacAddressEditing = false;
 
   constructor(private mainService: MainService) {

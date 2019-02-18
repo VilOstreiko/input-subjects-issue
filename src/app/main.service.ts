@@ -22,17 +22,17 @@ export class MainService {
       });
   }
 
-  updateMacAddressesList(originalMagnetronMacAddress: string,
-                         newMagnetronMacAddress: string,
-                         magnetronMacAddressPosition: number) {
+  updateMacAddressesList(originalItem: string,
+                         newItem: string,
+                         itemPosition: number) {
 
     const updatedList =
       this.list.mac.map((mac, macIndex) => {
-        const isMacOriginal = mac === originalMagnetronMacAddress;
-        const isIndexEqual = macIndex === magnetronMacAddressPosition;
+        const isMacOriginal = mac === originalItem;
+        const isIndexEqual = macIndex === itemPosition;
 
         if (isMacOriginal && isIndexEqual) {
-          return newMagnetronMacAddress;
+          return newItem;
         }
         return mac;
       });
