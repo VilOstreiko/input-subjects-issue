@@ -1,0 +1,13 @@
+<div class="mode-graph__mac-edit-wrap">
+  <div class="mode-graph__cancel-btn-wrap">
+  </div>
+  <input type="text" class="mode-graph__mac-edit-input"
+         [(ngModel)]="item"
+         (onEnter)="toggleMacEditInput()"
+         [readonly]="!isMacAddressEditing"/>
+  <button class="mode-graph__mac-edit-button"
+          [ngClass]="{'mode-graph__mac-edit-button--save': isMacAddressEditing}"
+          (click)="toggleMacEditInput()">
+    edit/save
+  </button>
+</div>
